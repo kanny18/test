@@ -11,10 +11,10 @@ node(){
     
     stage('test')
     sh 'touch test.txt'
-    
-    def signature = 'new groovy.json.JsonSlurperClassic'
-    org.jenkinsci.plugins.scriptsecurity.scripts.ScriptApproval.get().approveSignature(signature)
+   // def signature = 'new groovy.json.JsonSlurperClassicorg.jenkinsci.plugins.scriptsecurity.scripts.ScriptApproval.get().approveSignature(signature)
     stage('groovy')
+    def signature = 'new groovy.json.JsonSlurperClassic'
+org.jenkinsci.plugins.scriptsecurity.scripts.ScriptApproval.get().approveSignature(signature)
 def securitySdkJob = Jenkins.instance.getItemByFullName("sparse")
 def securitySdkLastSuccessfulBuildNumber=securitySdkJob.getLastSuccessfulBuild().getNumber()
 
