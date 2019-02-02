@@ -12,7 +12,7 @@ node(){
 
     
     stage('checkout')
-    checkout([$class: 'GitSCM', branches: [[name: '/efs/heads/develop']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'SparseCheckoutPaths', sparseCheckoutPaths: [[path: '']]]], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '277ec06f-179d-4198-9ef6-ce88e0b98a96', url: 'https://github.com/kanny18/test.git']]])
+    checkout([$class: 'GitSCM', branches: [[name: 'refs/heads/develop']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'SparseCheckoutPaths', sparseCheckoutPaths: [[path: '']]]], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '277ec06f-179d-4198-9ef6-ce88e0b98a96', url: 'https://github.com/kanny18/test.git']]])
     checkout([$class: 'GitSCM', branches: [[name: 'refs/heads/develop']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'SparseCheckoutPaths', sparseCheckoutPaths: [[path: '']]]], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '277ec06f-179d-4198-9ef6-ce88e0b98a96', url: 'https://github.com/kanny18/myrepo.git']]])
       //checkout([$class: 'GitSCM', branches: [[name: 'develop']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '277ec06f-179d-4198-9ef6-ce88e0b98a96', url: 'https://github.com/kanny18/test.git']]])
 //      checkout([$class: 'GitSCM', branches: [[name: 'develop']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '277ec06f-179d-4198-9ef6-ce88e0b98a96', url: 'https://github.com/kanny18/myrepo.git']]])
