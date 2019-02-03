@@ -24,5 +24,5 @@ echo "$darkSuiteLastSuccessfulBuildNumber"
 
 currentBuild.description = "Latest Master-DarkSuite Build: $darkSuiteLastSuccessfulBuildNumber<br>Latest Master-SecuritySDK Build: $securitySdkLastSuccessfulBuildNumber"
 */
-    load '/root/.jenkins/workspace/groovy-load/test.groovy'
+    load '/root/.jenkins/workspace/grovy-load/test.groovy'
 }
