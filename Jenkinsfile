@@ -27,4 +27,9 @@ echo "$darkSuiteLastSuccessfulBuildNumber"
 currentBuild.description = "Latest Master-DarkSuite Build: $darkSuiteLastSuccessfulBuildNumber<br>Latest Master-SecuritySDK Build: $securitySdkLastSuccessfulBuildNumber"
 */
     load 'test.groovy'
+    stage ('checkout again')
+    {
+       git credentialsId: 'aba8ab2b-8f2d-4c9f-a9ca-02992a28484f', url: 'https://github.com/kanny18/jenkins.git'
+    }
+    
 }
