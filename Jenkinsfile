@@ -13,7 +13,7 @@ node(){
     sh 'touch test.txt'
    // def signature = 'new groovy.json.JsonSlurperClassicorg.jenkinsci.plugins.scriptsecurity.scripts.ScriptApproval.get().approveSignature(signature)
     stage ('checkout')
-    git credentialsId: 'aba8ab2b-8f2d-4c9f-a9ca-02992a28484f', url: 'https://github.com/kanny18/test.git'
+    git credentialsId: '@@@@@@@@@@@@@@@@@@@@@@@@@@@@', url: 'https://github.com/kanny18/test.git'
     stage('groovy')
   /*  def signature = 'new groovy.json.JsonSlurperClassic'
  org.jenkinsci.plugins.scriptsecurity.scripts.ScriptApproval.get().approveSignature(signature)
@@ -29,7 +29,7 @@ currentBuild.description = "Latest Master-DarkSuite Build: $darkSuiteLastSuccess
     load 'test.groovy'
     stage ('checkout again')
     {
-       git credentialsId: 'aba8ab2b-8f2d-4c9f-a9ca-02992a28484f', url: 'https://github.com/kanny18/jenkins.git'
+       git credentialsId: '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@', url: 'https://github.com/kanny18/jenkins.git'
     }
     
 }
